@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Tela de Login</title>
+</head>
+<body>
+    <!--Container Main (Login)-->
+    <section class="container-login">
+
+        <h2>LOGIN</h2>
+
+
+        <!--Login-->
+        <form id="login-form">
+
+            <label for="username">USERNAME:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">PASSWORD:</label>
+            <input type="password" id="password" name="password" required>
+
+            <div class="btns">
+                <button type="button" onclick="acessar()">LOGIN</button>
+                <button type="button"><a href="./cadastro.html">SIGNUP</a></button>
+            </div>
+            
+        </form>
+
+        <!--Status-->
+        <p id="statusLogin" style="color: red;"></p>
+
+    </section>
+
+    <!--JavaScript-->
+    <script src="./assets/script.js"></script>
+    
+</body>
+</html>

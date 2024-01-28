@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <!--Container Main-->
+    <section class="container-login">
+
+        <h2>Cadastro</h2>
+        
+        <!--Formulário de Cadastro-->
+        <form id="login-form">
+
+            <label for="username">USERNAME:</label>
+            <input type="text" id="cadastrarUsername" name="username" required>
+
+            <label for="password">PASSWORD:</label>
+            <input type="password" id="cadastrarPassaword" name="password" required>
+            <div class="btns">
+                <button type="button" onclick="cadastrar()">SIGN UP</button>
+                <button type="button"><a href="./index.html">VOLTAR</a></button>
+            </div>
+        </form>
+
+        <!--Status-->
+        <p id="statusLogin" style="color: red;"></p>
+
+    </section>
+
+    <!--JavaScript-->
+    <script src="./assets/script.js"></script>
+</body>
+</html>

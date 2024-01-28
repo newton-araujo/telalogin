@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/welcome.css">
+    <title>Welcome</title>
+</head>
+<body>
+    
+    <h1 id="welcome"></h1>
+    <!--Main Redes Socias-->
+    <div class="main">
+        <p>Acesse a minhas redes sociais</p>
+    </div>
+    <!--Redes Sociais-->
+    <div class="redes">
+        <a href="https://www.instagram.com/devlevelup/" target="_blank"><img src="./icon/instagram.png" alt="Instagram"></a>
+        <a href="https://www.youtube.com/channel/UC05-ano5fcAGup-RP3_h2LA" target="_blank"><img src="./icon/youtube.png" alt="Youtube"></a>
+        <a href="https://www.linkedin.com/in/newtondepaulaaraujo-297867256/" target="_blank"><img src="./icon/linkedin.png" alt="LinkeDin"></a>
+        <a href="https://github.com/newton-araujo" target="_blank"><img src="./icon/github.png" alt="Github"></a>
+    </div>
+
+    <!--Javascript-->
+    <script>
+
+        //Buscando o nome do usuário na URL
+        document.addEventListener("DOMContentLoaded", function(){
+        const urlParametro = new URLSearchParams(window.location.search);
+        const user = urlParametro.get('username');
+
+
+        const welcome = document.getElementById('welcome');
+
+        welcome.innerHTML = `Bem vindo(a), ${user}!`
+        })
+    </script>
+</body>
+</html>
